@@ -12,6 +12,5 @@
 // Good luck! Your team knows they can count on you!
 
 function formatMoney(amount){
-    amount = String(amount).split(".")
-    return '$' + amount[0] + "." + amount[1].padStart(2, '0')
+    return '$' + amount.toFixed(2)
   }
