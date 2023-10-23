@@ -7,5 +7,5 @@
 // If you can, try writing it in one line of code.
 
 function findDifference(a, b) {
-    return a.reduce((acc,cur)=>acc*=cur,1) - b.reduce((acc,cur)=>acc*=cur,1)
+    return Math.abs(a.reduce((acc,cur)=>acc*=cur,1) - b.reduce((acc,cur)=>acc*=cur,1))
   }
