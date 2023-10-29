@@ -9,11 +9,5 @@
 // [1, 2, 1, 1, 3, 2] -> [1, 2, 3]
 
 function distinct(a){
-    let dist = []
-    for (let num of a){
-      if(!dist.includes(num)){
-        dist.push(num)
-      }
-    }
-    return dist
+    return [...new Set(a)]
   }
