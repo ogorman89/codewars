@@ -22,3 +22,4 @@ function meeting(s) {
       .map(x => x = "(" + x.split(':').reverse().join(', ') + ")")
       .sort()
       .join('')
+}
