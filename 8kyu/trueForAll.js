@@ -9,5 +9,5 @@
 // all((1, 2, 3, 4, 5), less_than_9)    -> True
 
 function all( arr, fun ){
-    return arr.map(x => fun(x)).filter(x => x === true).length === arr.length
+    return arr.every(fun)
   }
